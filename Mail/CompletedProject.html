@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Project Completed Notification</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family: Arial, sans-serif;">
+
+  <!-- Wrapper -->
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f6f8">
+    <tr>
+      <td align="center" style="padding:20px;">
+        
+        <!-- Container -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="border-radius:8px; overflow:hidden;">
+          
+          <!-- Header -->
+          <tr>
+            <td bgcolor="#28a745" align="center" style="padding:25px; color:#ffffff; font-size:22px; font-weight:bold;">
+              Project Completed: ##ProjectName##
+            </td>
+          </tr>
+          
+          <!-- Body -->
+          <tr>
+            <td style="padding:25px; color:#333333; font-size:14px; line-height:22px;">
+              <p style="margin:0 0 15px 0;">Dear <strong>##EmployeeNames##</strong>,</p>
+              <p style="margin:0 0 15px 0;">
+                🎉 Congratulations! The project <strong>##ProjectName##</strong> assigned to you has been marked as 
+                <span style="color:#28a745; font-weight:bold;">Completed</span>.  
+                Well done on your timely and efficient work.
+              </p>
+
+              <!-- Conditional section for pending names -->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f9fbfd" style="border:1px solid #e0e0e0; border-radius:6px; margin:20px 0; display: ##PendingCondition##;">
+                <tr>
+                  <td style="padding:15px; font-size:14px; color:#333333;">
+                    <p style="margin:0;"><strong>Project Pending By:</strong> ##PendingEmployees##</p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- <p style="margin:0 0 20px 0;">Please log in to Task Engine to review any additional tasks or updates.</p> -->
+
+              <!-- Button -->
+              <!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:20px auto;">
+                <tr>
+                  <td align="center" bgcolor="#28a745" style="border-radius:5px;">
+                    <a href="https://demo.mbwapps.in/login.php" target="_blank" style="display:inline-block; padding:12px 20px; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none; border-radius:5px;">View Dashboard</a>
+                  </td>
+                </tr>
+              </table> -->
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td bgcolor="#f1f1f1" align="left" style="padding:15px; font-size:12px; color:#555555;">
+              Best Regards,<br>
+              <strong>##AssignedPerson##</strong><br>
+              ##Designation##
+            </td>
+          </tr>
+        
+        </table>
+        <!-- End Container -->
+      </td>
+    </tr>
+  </table>
+  <!-- End Wrapper -->
+
+</body>
+</html>
